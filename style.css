@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  color: #fff;
+  background-color:crimson;
+  padding: 60px;
+
+}
+
+h2 {
+  color:darkgray;
+  font-size: 45px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ab5f1d;
+}
+
+.firstAnimation {
+  animation-duration: 3s;
+  animation-name: first;
+}
+
+@keyframes first {
+  from {
+    margin-left: 90%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
+}
+
+.secAnimation {
+  animation-duration: 3s;
+  animation-name: scnd;
+}
+
+@keyframes scnd {
+  from {
+    margin-left: 90%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 90%;
+  }
+}
+
+.heading {
+  position: relative;
+  animation: heading 6s infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes heading {
+  from {
+    left: 30px;
+  }
+
+  to {
+    left: 1050px;
+  }
+}
+
+.animate__fadeInDown {
+  animation-duration: 5s;
+}
+
+.box{
+    width: 280px;
+    height: 720px;
+    margin-left: 400px;
+    
+  }
+  .box-content {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  background-color: rgb(255, 242, 0);
+}
+.box:hover .box-content{
+  transform: rotateY(-180deg);
+}
+.box-front {
+  backface-visibility: hidden;
+  color: aliceblue;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  
+}
+.box-back h1{
+    padding-top: 40px ;
+    color:coral;
+
+   font-size: 40px;
+   text-align: center;
+}
+.box-back p{
+    color:black;
+   font-size:20px;
+   text-align: center;
+
+   padding-bottom: 80px ;
+   padding-left: 20px;
+   padding-right: 20px;
+}
